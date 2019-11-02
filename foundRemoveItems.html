@@ -1,0 +1,17 @@
+<!--
+  Name: Sukayna Kugshia
+  Date: 11/02/2019
+  Description: foundRemoveItems.html page.
+                                
+                                  Assignment #8
+-->
+
+<table class="table table-bordered table-striped">
+	  <tr ng-repeat="item in foundItems">
+	    <th><strong><i>Menu Short Name</i></strong></th><td>{{ item.short_name }}</td>
+	    <th><strong><i>Menu Name</i></strong></th><td>{{ item.name }}</td>
+	    <th><strong><i>Description</i></strong></th><td >{{ item.description }}</td>
+	    <td><button class="btn" ng-click="onRemove({index: $index});">Don't want this one!</button></td>
+	  </tr>
+</table>
+<div style="color:red" ng-if="!foundItems"><strong>Nothing Found!</strong></div>
