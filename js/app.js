@@ -45,7 +45,7 @@ function NarrowItDownController(MenuSearchService) {
       menu.found = response;
     })
     .catch(function (error) {
-      throw new Error(error);
+      console.log(error);
     });
   };
 
